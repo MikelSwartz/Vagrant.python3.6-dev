@@ -11,8 +11,4 @@ echo "Creating python3 alias for python3's REPL"
 echo "'py'"
 echo "alias py='/usr/bin/python3.6'" >> .bashrc
 
-cd /home/vagrant/
-sudo -u vagrant git clone https://github.com/spf13/spf13-vim.git
-cd /home/vagrant/spf13-vim
-sudo -u vagrant chmod +x bootstrap.sh
-sudo -u vagrant ./bootstrap.sh
+suco -u vagrant cp vimrc /home/vagrant/.vimrc
