@@ -9,7 +9,7 @@ yum install python36u-pip -y
 yum install python36u-devel -y
 echo "Creating python3 alias for python3's REPL"
 echo "'py'"
-echo "alias py='python3'" >> .bashrc
+echo "alias py='/usr/bin/python3.6'" >> .bashrc
 
 cd /home/vagrant/
 sudo -u vagrant git clone https://github.com/spf13/spf13-vim.git
