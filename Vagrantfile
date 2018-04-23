@@ -15,7 +15,7 @@ Vagrant.configure("2") do |config|
 	  py.vm.hostname = "py-CentOS7.og.com"
 	#Admin ports
 	#Test port
-	#py.vm.network "forwarded_port", guest: 8010, host: 8010
+	py.vm.network "forwarded_port", guest: 5000, host: 5000
 	  
 	  py.vm.provision "shell",
             path: "py.provision.sh"

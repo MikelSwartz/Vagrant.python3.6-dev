@@ -10,5 +10,5 @@ yum install python36u-devel -y
 echo "Creating python3 alias for python3's REPL"
 echo "'py'"
 echo "alias py='/usr/bin/python3.6'" >> .bashrc
-
-suco -u vagrant cp vimrc /home/vagrant/.vimrc
+pip3 install virtualenv
+sudo -u vagrant cp vimrc /home/vagrant/.vimrc
